@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class PruebasMagento {
 
     @BeforeMethod
-    public void setup() {
+    public void entorno() {
         DriverManager.create("chrome");
         DriverManager.getDriver().get("https://magento.softwaretestingboard.com/");
     }
@@ -39,7 +39,7 @@ public class PruebasMagento {
 
         Payment_Service paymentService = new Payment_Service();
 
-        paymentService.confirmarCompra();
+        paymentService.realizarCompraOK();
 
         //Extras:
         ThankYou_Service thankYouService = new ThankYou_Service();
@@ -50,6 +50,6 @@ public class PruebasMagento {
 
         Assert.assertEquals(thankYouService.getTitleText(), "Thank you for your purchase!", "Texto Incorrecto");
 
-        Assert.assertTrue(thankYouService.orderNumberIsANumber(), "Numero de Orden Invalido");
+        Assert.assertTrue(thankYouService.validacionNroOrden(), "Numero de Orden Invalido");
     }
 }

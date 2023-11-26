@@ -16,7 +16,7 @@ public class Payment_Service {
         this.paymentPagina = new Payment();
     }
 
-    public void confirmarCompra(){
+    public void realizarCompraOK(){
         WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(10));
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("div.loading-mask")));
         DriverActions.click(this.paymentPagina.getBtnPlaceOrder());

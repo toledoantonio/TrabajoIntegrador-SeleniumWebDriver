@@ -23,7 +23,7 @@ public class ThankYou_Service {
         return DriverActions.isEnabled(this.thankYouPage.getBtnContinueShopping());
     }
 
-    public Boolean orderNumberIsANumber(){
+    public Boolean validacionNroOrden(){
         return validarNumero(extraerNumOrden(this.thankYouPage.getNroOrden()));
     }
 

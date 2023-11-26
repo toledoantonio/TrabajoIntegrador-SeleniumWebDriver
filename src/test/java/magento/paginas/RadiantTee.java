@@ -27,7 +27,5 @@ public class RadiantTee {
     public By getLinkShoppingCart() {
         return linkShoppingCart;
     }
-
 }
-
 

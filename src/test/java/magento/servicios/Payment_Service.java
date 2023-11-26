@@ -21,5 +21,5 @@ public class Payment_Service {
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("div.loading-mask")));
         DriverActions.click(this.paymentPagina.getBtnPlaceOrder());
     }
-
 }
+

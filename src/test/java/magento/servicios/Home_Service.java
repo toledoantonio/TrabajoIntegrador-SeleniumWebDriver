@@ -16,5 +16,5 @@ public class Home_Service {
     public void elegirRemeraRadiantTee() {
         DriverActions.click(this.homePagina.getLinkRadiantTee());
     }
-
 }
+

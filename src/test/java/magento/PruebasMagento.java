@@ -53,3 +53,4 @@ public class PruebasMagento {
         Assert.assertTrue(thankYouService.validacionNroOrden(), "Numero de Orden Invalido");
     }
 }
+

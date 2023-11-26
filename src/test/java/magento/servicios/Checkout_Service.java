@@ -14,5 +14,5 @@ public class Checkout_Service {
     public void continuarCompra(){
         DriverActions.click(this.checkoutPage.getBtnGoCheckout());
     }
-
 }
+

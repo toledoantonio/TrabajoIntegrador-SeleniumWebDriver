@@ -29,8 +29,8 @@ public class Shipping_Service {
         DriverActions.insertText(this.shippingPage.getTxtPhone(), telefono+"");
         DriverActions.click(this.shippingPage.getRbShippingMethod());
     }
-
     public void irUltimo(){
         DriverActions.click(this.shippingPage.getBtnNext());
     }
 }
+

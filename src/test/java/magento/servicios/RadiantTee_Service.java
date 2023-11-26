@@ -23,5 +23,5 @@ public class RadiantTee_Service {
     public void verCarrito(){
         DriverActions.click(this.radiantTeePage.getLinkShoppingCart());
     }
-
 }
+

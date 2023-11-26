@@ -16,40 +16,40 @@ public class PruebasMagento {
     @Test
     public void comprarRadiantTee(){
         Home_Service homeService = new Home_Service(DriverManager.getDriver());
-        //2
+
         homeService.elegirRemeraRadiantTee();
 
         RadiantTee_Service radiantTeeService = new RadiantTee_Service();
-        //3
+
         radiantTeeService.configurarRemera(2);
 
-        //4
         radiantTeeService.agregarCarrito();
 
-        //5
         radiantTeeService.verCarrito();
 
         Checkout_Service checkoutService = new Checkout_Service();
-        //6
+
         checkoutService.continuarCompra();
 
         Shipping_Service shippingService = new Shipping_Service();
-        //7 y 8
+
         shippingService.completarFormulario("prueba123@gmail.com","Antonio","Toledo","Concordia","Av siempre Viva 123","Miami","Florida",4587,"US",123456789);
 
-        //9
         shippingService.irUltimo();
 
         Payment_Service paymentService = new Payment_Service();
-        //10
+
         paymentService.confirmarCompra();
 
-        //Validaciones:
+        //Extras:
         ThankYou_Service thankYouService = new ThankYou_Service();
 
         Assert.assertTrue(thankYouService.isEnableContinueShopping());
 
         Assert.assertTrue(thankYouService.isVisibleCreateAccount());
 
+        Assert.assertEquals(thankYouService.getTitleText(), "Thank you for your purchase!", "Texto Incorrecto");
+
+        Assert.assertTrue(thankYouService.orderNumberIsANumber(), "Numero de Orden Invalido");
     }
 }

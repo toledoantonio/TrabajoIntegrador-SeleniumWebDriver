@@ -1,7 +1,4 @@
 # Trabajo Práctico Integrador Selenium
-
-## Uso del patrón Page Object junto al Principio de Responsabilidad Única
-
 ### Descripción del TPI:
 Este proyecto tiene como objetivo automatizar la compra de una prenda en el sitio web de Magento, utilizando Selenium WebDriver en combinación con el patrón de diseño Page Object y el Principio de Responsabilidad Única.
 
@@ -35,5 +32,6 @@ Este caso de prueba automatiza el proceso de compra de una prenda en el sitio we
 - Java
 - Selenium WebDriver
 - TestNG (u otro framework de pruebas)
+- Uso del patrón Page Object junto al Principio de Responsabilidad Única
 - Un navegador web compatible (Chrome, Firefox, etc.)
 - Herramienta de construcción de proyectos como Maven o Gradle
